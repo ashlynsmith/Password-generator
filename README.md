@@ -23,3 +23,7 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 I ran into a few challenges with this but was able to complete this by 
+- adding arrays in order to create the letter and numbers.
+- creating the function confirm to ask in the generator if the user wanted to use uppercase leters, lowercase letter, and numbers.
+- creating a for loop to tie the password length together.
+- creating a password length that will alert user if it is less than 8 characters or over 128

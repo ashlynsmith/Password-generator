@@ -28,8 +28,18 @@ function generatePassword(){
 
 let password = ""
 
+// password no less than 8 characters and no greater than 128 characters
 
-let passwordLength =prompt ("how long do you want the password")
+let passwordLength = prompt("How long would you like your password to be?")
+if (passwordLength < 8 ) {
+    alert("Must be greater than 8")
+    return
+}
+if (passwordLength > 128){
+    alert("Must be less than 128")
+    return
+}
+
 for (let i = 0; i < passwordLength; i++) {
 
   let generatedLetterIndex = Math.floor(Math.random() * builtArray.length);
@@ -40,7 +50,7 @@ for (let i = 0; i < passwordLength; i++) {
    
 
 
-// build a string based off of randomly selected values from an array
+//string based off of randomly selected values from an array
 
 
     return password;
@@ -55,5 +65,5 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// event listener to generate button
 generateBtn.addEventListener("click", writePassword);
