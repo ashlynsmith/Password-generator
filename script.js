@@ -32,9 +32,9 @@ let password = ""
 let passwordLength =prompt ("how long do you want the password")
 for (let i = 0; i < passwordLength; i++) {
 
-  Math.floor(Math.random() * builtArray.length);
+  let generatedLetterIndex = Math.floor(Math.random() * builtArray.length);
 
-    password += ""
+    password += builtArray[generatedLetterIndex]
 
 }
    
